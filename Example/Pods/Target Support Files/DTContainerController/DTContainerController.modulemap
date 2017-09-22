@@ -1,0 +1,6 @@
+framework module DTContainerController {
+  umbrella header "DTContainerController-umbrella.h"
+
+  export *
+  module * { export * }
+}

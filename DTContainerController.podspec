@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DTContainerController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DTContainerController.'
+  s.summary          = 'A simple container to handle transitioning between two view controllers, written in Swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+A Swift view controller container to handle transitioning between two view controllers.
+DTContainerController contains a current view controller that, when transiting to a new current view controller, is destroyed. 
                        DESC
 
   s.homepage         = 'https://github.com/tungvoduc/DTContainerController'

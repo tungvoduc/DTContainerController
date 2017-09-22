@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		844FBBFF1F75AF90009B9BEB /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FBBFE1F75AF90009B9BEB /* ContainerController.swift */; };
 		FC63033F846D422D2DDB7F4B /* Pods_DTContainerController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB58B9055D63056F82E56648 /* Pods_DTContainerController_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,11 +41,12 @@
 		607FACE51AFB9204008FA782 /* DTContainerController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTContainerController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8C8238A0C2A57182814A7EC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		97B6C37A87C201BE5F376F81 /* DTContainerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DTContainerController.podspec; path = ../DTContainerController.podspec; sourceTree = "<group>"; };
+		844FBBFE1F75AF90009B9BEB /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		8C8238A0C2A57182814A7EC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		97B6C37A87C201BE5F376F81 /* DTContainerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DTContainerController.podspec; path = ../DTContainerController.podspec; sourceTree = "<group>"; };
 		9AEC9F9179233402DFB785CA /* Pods-DTContainerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerController_Tests/Pods-DTContainerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9C3D63D35D8D12EBCB068DBD /* Pods-DTContainerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerController_Tests/Pods-DTContainerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8F86234391298C3F2E3A335 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A8F86234391298C3F2E3A335 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AB58B9055D63056F82E56648 /* Pods_DTContainerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTContainerController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F43A8E19850E284678B115 /* Pods_DTContainerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTContainerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				844FBBFE1F75AF90009B9BEB /* ContainerController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -372,6 +375,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				844FBBFF1F75AF90009B9BEB /* ContainerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
