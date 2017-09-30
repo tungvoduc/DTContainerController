@@ -43,7 +43,11 @@ class ViewController: UIViewController {
         button.setTitle("Tap me!", for: UIControlState.normal)
     }
     
-    func buttonTapped() {
+    deinit {
+        print("ViewController destroyed")
+    }
+    
+    @objc func buttonTapped() {
         containerViewController?.show(ViewController(), animated: true, completion: nil)
     }
 }
