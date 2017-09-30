@@ -218,12 +218,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = YEA93CRG3C;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = YEA93CRG3C;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -523,7 +521,7 @@
 			baseConfigurationReference = 04119272D2B9676A85AF47BD /* Pods-DTContainerController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YEA93CRG3C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DTContainerController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -539,7 +537,7 @@
 			baseConfigurationReference = 1DE449747CF74F51FF9F9A5C /* Pods-DTContainerController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YEA93CRG3C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DTContainerController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -554,7 +552,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C3D63D35D8D12EBCB068DBD /* Pods-DTContainerController_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = YEA93CRG3C;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -576,7 +574,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AEC9F9179233402DFB785CA /* Pods-DTContainerController_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = YEA93CRG3C;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

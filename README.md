@@ -14,7 +14,7 @@ There are cases where you want to present a new view controller and destroy the 
 DTContainerController should usually be used as the root view controller of the application window.
 
 ## Screenshot
-![Screenshot](Screenshot.PNG)
+![Screenshot](giphy.gif)
 
 ## Usage
 
