@@ -17,6 +17,32 @@ class ViewController: UIViewController {
         view.addSubview(button)
         button.addTarget(self, action: #selector(buttonTapped), for: UIControlEvents.touchUpInside)
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        let buttonHeight: CGFloat = 50
+        let buttonWidth: CGFloat = 100
+        button.layer.cornerRadius = buttonHeight/2
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.white.cgColor
+        button.backgroundColor = UIColor.black
+        button.setTitle("Tap me!", for: UIControlState.normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        let widthConstraint = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal,
+                                                 toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: buttonWidth)
+        
+        let heightConstraint = NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal,
+                                                  toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: buttonHeight)
+        button.addConstraint(widthConstraint)
+        button.addConstraint(heightConstraint)
+        
+        let xConstraint = NSLayoutConstraint(item: button, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)
+        
+        let yConstraint = NSLayoutConstraint(item: button, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0)
+        
+        view.addConstraint(xConstraint)
+        view.addConstraint(yConstraint)
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,18 +58,13 @@ class ViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
-        let buttonHeight: CGFloat = 50
-        let buttonWidth: CGFloat = 100
-        
-        button.frame = CGRect(x: (view.frame.width - buttonWidth)/2, y: (view.frame.height - buttonHeight)/2, width: buttonWidth, height: buttonHeight)
-        button.layer.cornerRadius = buttonHeight/2
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.white.cgColor
-        button.setTitle("Tap me!", for: UIControlState.normal)
     }
     
-    func buttonTapped() {
+    deinit {
+        print("ViewController destroyed")
+    }
+    
+    @objc func buttonTapped() {
         containerViewController?.show(ViewController(), animated: true, completion: nil)
     }
 }

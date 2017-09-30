@@ -60,11 +60,9 @@ open class DTContainerController: UIViewController {
         viewController.view.frame = view.bounds
         viewController.view.transform = viewController.view.transform.concatenating(CGAffineTransform(translationX: 0, y: view.frame.size.height))
         
-        
         // The transition
         UIView.animate(withDuration: animated ? 0.6 : 0.0, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 2.0, options: UIViewAnimationOptions.curveLinear, animations: {
             // Update status bar
-            self.currentViewController = viewController
             self.setNeedsStatusBarAppearanceUpdate()
             
             if let oldViewController = oldViewController {
@@ -75,6 +73,7 @@ open class DTContainerController: UIViewController {
             oldViewController?.removeFromParentViewController()
             viewController.didMove(toParentViewController: self)
             completion?()
+            self.currentViewController = viewController
         })
     }
 }
