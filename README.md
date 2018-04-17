@@ -9,7 +9,7 @@ DTContainerController is a view controller container written in Swift.
 
 ## Why DTContainerController?
 
-There are cases where you want to present a new view controller and destroy the current view controller. The most applicables case are when user goes through onboarding steps and logs in to the app or when user logs out from the app to welcome view. In these cases, the new view controller are presented and there is no reasons to keep old view controller alive,  this cannot be done by using present(_:animated:completion:) since the presenting view controller still exists after presentation. This is how DTContainerController can be helpful.
+There are cases where you want to present a new view controller and destroy the current view controller. The most applicable cases are when user goes through onboarding phase and logs into the app or when user logs out from the app to log-in view. In these cases, the new view controller are presented and there is no reasons to keep old view controller alive,  this cannot be done by using present(_:animated:completion:) since the presenting view controller still exists after presentation. This is why DTContainerController becomes handy.
 
 DTContainerController should usually be used as the root view controller of the application window.
 
