@@ -10,7 +10,11 @@ import UIKit
 
 open class DTContainerController: UIViewController {
     /// currentViewController
-    open private(set) var currentViewController: UIViewController?
+    open private(set) var currentViewController: UIViewController? {
+        didSet {
+            setNeedsStatusBarAppearanceUpdate()
+        }
+    }
     
     //MARK: Initializers
     required public init(viewController: UIViewController) {
@@ -41,9 +45,10 @@ open class DTContainerController: UIViewController {
         }
     }
     
-    override open func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
+        // Prevent frame update during transition
         if let currentViewController = currentViewController {
             currentViewController.view.frame = view.bounds
         }
@@ -53,7 +58,6 @@ open class DTContainerController: UIViewController {
         let oldViewController = currentViewController
         oldViewController?.willMove(toParentViewController: nil)
         addChildViewController(viewController)
-        self.currentViewController = nil // Prevent frame changing in viewWillLayoutSubviews
         
         // Add new view controller's view
         view.addSubview(viewController.view)
@@ -63,17 +67,18 @@ open class DTContainerController: UIViewController {
         // The transition
         UIView.animate(withDuration: animated ? 0.6 : 0.0, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 2.0, options: UIViewAnimationOptions.curveLinear, animations: {
             // Update status bar
-            self.setNeedsStatusBarAppearanceUpdate()
+            self.currentViewController = viewController
             
             if let oldViewController = oldViewController {
                 oldViewController.view.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             }
+            
             viewController.view.transform = CGAffineTransform.identity
+            
         }, completion: { (finished) in
             oldViewController?.removeFromParentViewController()
             viewController.didMove(toParentViewController: self)
             completion?()
-            self.currentViewController = viewController
         })
     }
 }
