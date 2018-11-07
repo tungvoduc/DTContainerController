@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let button = UIButton(type: UIButtonType.custom)
+    let button = UIButton(type: UIButton.ButtonType.custom)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.randomColor()
         view.addSubview(button)
-        button.addTarget(self, action: #selector(buttonTapped), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(buttonTapped), for: UIControl.Event.touchUpInside)
         // Do any additional setup after loading the view, typically from a nib.
         
         
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.white.cgColor
         button.backgroundColor = UIColor.black
-        button.setTitle("Tap me!", for: UIControlState.normal)
+        button.setTitle("Tap me!", for: UIControl.State.normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         let widthConstraint = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal,
