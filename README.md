@@ -53,7 +53,7 @@ pod 'DTContainerController'
 
 ## Author
 
-tungvoduc, tung98.dn@gmail.com
+Tung Vo, tung98.dn@gmail.com
 
 ## License
 
