@@ -1,6 +1,5 @@
 # DTContainerController
 
-[![CI Status](http://img.shields.io/travis/tungvoduc/DTContainerController.svg?style=flat)](https://travis-ci.org/tungvoduc/DTContainerController)
 [![Version](https://img.shields.io/cocoapods/v/DTContainerController.svg?style=flat)](http://cocoapods.org/pods/DTContainerController)
 [![License](https://img.shields.io/cocoapods/l/DTContainerController.svg?style=flat)](http://cocoapods.org/pods/DTContainerController)
 [![Platform](https://img.shields.io/cocoapods/p/DTContainerController.svg?style=flat)](http://cocoapods.org/pods/DTContainerController)
@@ -47,8 +46,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 DTContainerController is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+For Swift 5:
+
 ```ruby
 pod 'DTContainerController'
+```
+
+For Swift 4.2:
+```ruby
+pod 'DTContainerController', '~> 0.1.3'
 ```
 
 ## Author
