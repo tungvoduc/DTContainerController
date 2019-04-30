@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DTContainerController'
-  s.version          = '0.1.3'
+  s.version          = '1.0.1'
   s.summary          = 'A simple container to handle transitioning between two view controllers, written in Swift.'
-  s.swift_version    = '4.2'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
